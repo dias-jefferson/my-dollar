@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Dollars</title>
+  </head>
+  
+  <body>
+    <img src="./my-dolar.gif" />
+    <h1>My Dollars</h1>
+    
+    <div>
+      <input id="input-real" type="number" placeholder="Valor em reais">
+      <input id="input-dolar" placeholder="Valor do Dollar">
+      
+      <p id="dolares">$ 0</p>
+      
+      <button onclick="calcularDolar()">Converter</button>
+    </div> 
+  </body>
+
+  <script>
+    
+    function calcularDolar(){
+      let real = document.getElementById("input-real").value
+      let dolar = document.getElementById("input-dolar").value
+
+      let resultado = real / dolar
+
+      //alert("O total é $" + resultado)
+      dolares.innerHTML = "$ " + resultado
+    }
+    
+    
+  </script>
+
+</html>
